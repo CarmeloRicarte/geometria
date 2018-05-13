@@ -1,6 +1,6 @@
 
 public abstract class FiguraGeometrica_CRR {
-
+	
 	protected String tipoFigura;
 
 	public FiguraGeometrica_CRR(String tipoFigura) {
@@ -20,4 +20,7 @@ public abstract class FiguraGeometrica_CRR {
 		this.tipoFigura = tipoFigura;
 	}
 
+	public double semiPerimetro() {
+		return this.perimetro() / 2;
+	}
 }
