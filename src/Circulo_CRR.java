@@ -6,7 +6,11 @@ public class Circulo_CRR extends FiguraGeometrica_CRR {
 	
 	public Circulo_CRR(double r, String tipoFigura) {
 		super(tipoFigura);
+		if(r<0) {
+			radio=radio* (-1);
+		}else {
 		radio = r;
+		}
 	}
 
 	@Override
